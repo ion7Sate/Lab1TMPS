@@ -1,10 +1,11 @@
-public final  class Rector {
+//Lazy Initialization
+public   final  class Rector {
 
         private static Rector rectorInstance;
-        public int id;
-        public String fullNameOfRector;
-        public String dateOfBirth;
-        public String email;
+        private int id;
+        private String fullNameOfRector;
+        private String dateOfBirth;
+        private String email;
 
         private Rector(int id,String fullNameOfRector,String dateOfBirth,String email) {
             this.id = id;
@@ -19,6 +20,46 @@ public final  class Rector {
             }
             return rectorInstance;
         }
+
+    public static Rector getRectorInstance() {
+        return rectorInstance;
+    }
+
+    public static void setRectorInstance(Rector rectorInstance) {
+        Rector.rectorInstance = rectorInstance;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getFullNameOfRector() {
+        return fullNameOfRector;
+    }
+
+    public void setFullNameOfRector(String fullNameOfRector) {
+        this.fullNameOfRector = fullNameOfRector;
+    }
+
+    public String getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     @Override
     public String toString() {
