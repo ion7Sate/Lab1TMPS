@@ -1,4 +1,4 @@
-public enum RectorEnum {
+public enum  RectorEnum {
     rector_Instance(1,"Viorel Bostan","31-08-1972","viorel.bostan@adm.utm.md");
     private int id;
     private String fullNameOfRector;

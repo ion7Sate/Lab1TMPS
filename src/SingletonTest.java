@@ -26,6 +26,11 @@ public class SingletonTest {
         System.out.println(anotherRector);
 
 
+        System.out.println("-------------------------------------------------------------------------");
 
+        RectorSyncronized rectorSyncronized2 = RectorSyncronized.getInstance(3,"Ion Bostan",
+                "31-07-1949","ionbostan1@gmail.com");
+
+        System.out.println(rectorSyncronized2);
     }
 }
